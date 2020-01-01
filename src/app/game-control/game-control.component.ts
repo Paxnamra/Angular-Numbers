@@ -20,4 +20,8 @@ export class GameControlComponent implements OnInit {
       this.startNum++;
     }, 1000);
   }
+
+  stopGame() {
+    clearInterval(this.displayNum);
+  }
 }
