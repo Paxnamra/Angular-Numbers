@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, EventEmitter } from "@angular/core";
+import { Component, OnInit, Input, EventEmitter, Output } from "@angular/core";
 
 @Component({
   selector: "app-game-control",
@@ -6,7 +6,7 @@ import { Component, OnInit, Input, EventEmitter } from "@angular/core";
   styleUrls: ["./game-control.component.css"]
 })
 export class GameControlComponent implements OnInit {
-  displayNumberOnLaunch = new EventEmitter<number>();
+  @Output() displayNumberOnLaunch = new EventEmitter<number>();
   startNum = 0;
   displayNum;
 
