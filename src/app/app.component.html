@@ -1,1 +1,8 @@
-<app-game-control (displayNumberOnLaunch)="onStarEventLaunch($event)"></app-game-control>
+<div class="container">
+    <app-game-control (displayNumberOnLaunch)="onStarEventLaunch($event)"></app-game-control>
+    <app-odd *ngFor="let oddNum of oddNums" [number]="oddNum"></app-odd>
+    <app-even *ngFor="let evenNum of evenNums" [number]="evenNum"></app-even>
+</div>
+       
+      
+    
